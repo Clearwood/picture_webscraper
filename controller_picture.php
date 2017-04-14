@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 		$return_msg["src"]=array();
 		foreach($html->find('img') as $element){
 		//turns the sometimes relative sources of pictures into absolute urls
-    	$absolute_url=url_to_absolute($url, $element->src);
+    		$absolute_url=url_to_absolute($url, $element->src);
 		//pushes the absolute url of all images on the website into an array of sources
 		array_push($return_msg["src"], $absolute_url);
 		}
