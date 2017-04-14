@@ -8,7 +8,7 @@ require_once('simple_html_dom.php');
 require_once('url_to_absolute.php');
 $return_msg=array();
 //for security reasons the webscrapper should verify if
-//the page to be scraped is the one picture should be scraped from 
+//the page to be scraped is the one pictures should be scraped from 
 const HOST_NAME = ''; //e.g google.com not https://www.google.com
 if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$url = $_POST["url"];
